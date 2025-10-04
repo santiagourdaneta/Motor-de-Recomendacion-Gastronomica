@@ -1,0 +1,43 @@
+/* En templates/styles.css */
+
+/* Define los estilos para el tema claro */
+body {
+    background-color: #f7f7f7;
+    color: #333; /* Color de texto para el modo claro */
+}
+
+/* Regla para el modo oscuro, que se activa con el atributo [data-theme="dark"] en el HTML */
+[data-theme="dark"] body {
+    background-color: #121212;
+    color: #e0e0e0; /* Color de texto para el modo oscuro */
+}
+
+/* Formato general */
+h1, h2, h3, hgroup {
+    text-align: center;
+}
+
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,13 @@
+# Archivos de compilación de TypeScript
+/dist/
+
+# Directorios de módulos de Node
+/node_modules/
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db

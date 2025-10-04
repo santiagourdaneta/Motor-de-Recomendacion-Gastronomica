@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Inteligente - Motor de Recomendación Gastronómica</title>
+    
+    <meta name="description" content="Descubre tu próximo plato favorito con nuestro motor de recomendación de comida peruana y venezolana.">
+    <meta name="keywords" content="comida, recomendación, gastronomía, peruana, venezolana, lomo saltado, arepa">
+    <meta name="author" content="Tu Nombre">
+    
+    <meta property="og:title" content="Chef Inteligente">
+    <meta property="og:description" content="Un motor de recomendación para descubrir platos de Perú y Venezuela.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:8080/">
+    <meta property="og:image" content="http://localhost:8080/images/logo.png">
+
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=github.com&sz=64">
+    
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.7/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container">
+        <hgroup>
+            <h1>Chef Inteligente</h1>
+            <h2>Motor de Recomendación Gastronómica</h2>
+        </hgroup>
+        <form id="search-form">
+            <input type="search" id="search-input" placeholder="Buscar platos, países o ingredientes...">
+          
+        </form>
+    </header>
+
+    <main class="container">
+        <section id="content-container">
+            <h2>Platos recomendados para ti:</h2>
+            <div class="grid" id="dishes-list">
+                <p>Cargando recomendaciones...</p>
+            </div>
+        </section>
+    </main>
+    
+ <script type="module" src="dist/main.js"></script>
+</body>
+</html>
